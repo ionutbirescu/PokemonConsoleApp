@@ -9,6 +9,10 @@ class Program
     {
         var pokemonData= PokemonUtils.GetPokemonDataAsync("Pikachu").Result;
         Pokemon myPokemon = JsonSerializer.Deserialize<Pokemon>(pokemonData);
-        Console.WriteLine(myPokemon.name+ " " + myPokemon.cries);
+        Console.WriteLine(myPokemon.name+ " ");
+        foreach (var statElement in myPokemon.stats)
+        {
+            Console.WriteLine(statElement);
+        }
     }
 }

@@ -12,3 +12,4 @@
 /home/student/RiderProjects/PokemonConsoleApp/PokemonConsoleApp/obj/Debug/net9.0/PokemonConsoleApp.pdb
 /home/student/RiderProjects/PokemonConsoleApp/PokemonConsoleApp/obj/Debug/net9.0/PokemonConsoleApp.genruntimeconfig.cache
 /home/student/RiderProjects/PokemonConsoleApp/PokemonConsoleApp/obj/Debug/net9.0/ref/PokemonConsoleApp.dll
+/home/student/RiderProjects/PokemonConsoleApp/PokemonConsoleApp/obj/Debug/net9.0/PokemonConsoleApp.sourcelink.json

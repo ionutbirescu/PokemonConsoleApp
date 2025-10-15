@@ -6,5 +6,10 @@ public class Abilities
     public bool is_hidden { get; set; }
     public uint slot;
     
-    public string toString { get; set; }
+    public override string ToString()
+    {
+        return abilityType.ToString() + 
+               "\nis_hidden: " + is_hidden.ToString() +
+               "\nslot: " + slot.ToString();
+    }
 }
