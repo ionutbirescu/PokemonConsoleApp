@@ -2,7 +2,7 @@ namespace PokemonConsoleApp;
 
 public class StatElement
 {
-    public uint base_stat { get; set; }
+    public int base_stat { get; set; }
     public uint effort { get; set; }
     public Link stat { get; set; }
 
