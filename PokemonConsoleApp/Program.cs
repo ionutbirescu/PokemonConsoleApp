@@ -33,5 +33,44 @@ class Program
         battleSimulator.SimulateAttack(ref pikachu, ref bulbasaur);
         double average = battleSimulator.CalculateAverageStat("attack", pikachu, bulbasaur);
         Console.WriteLine($"Average Stat: {average}");
+        
+        List<BasePokemon> pokedex = new List<BasePokemon>();
+        string[] names = { "pikachu", "bulbasaur", "mewtwo", "eevee" };
+        
+        foreach (var name in names)
+        {
+            pokemonData = PokemonUtils.GetPokemonDataAsync(name).Result;
+            Pokemon pokemon = JsonSerializer.Deserialize<Pokemon>(pokemonData);
+            var speciesData = PokemonSpeciesHelper.GetSpeciesDataAsync(pokemon.species.url).Result;
+            BasePokemon basePokemon;
+            if (speciesData.IsLegendary || speciesData.IsMythical)
+            {
+                basePokemon = new LegendaryPokemon
+                {
+                    id = pokemon.id,
+                    name = pokemon.name,
+                    weight = pokemon.weight,
+                    species = pokemon.species,
+                    SpecialType = speciesData.IsMythical ? "Mythical" : "Legendary"
+                };
+            }
+            else
+            {
+                basePokemon = new StandardPokemon
+                {
+                    id = pokemon.id,
+                    name = pokemon.name,
+                    weight = pokemon.weight,
+                    species = pokemon.species,
+                };
+            }
+            pokedex.Add(basePokemon);
+        }
+
+        foreach (var pokemon in pokedex)
+        {
+            pokemon.DisplayInfo();
+        }
+        
     }
 }

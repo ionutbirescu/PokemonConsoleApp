@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/student/RiderProjects/PokemonConsoleApp/PokemonConsoleApp/PokemonConsoleApp.csproj",
+      "projectUniqueName": "/home/student/RiderProjects/PokemonConsoleApp2/PokemonConsoleApp/PokemonConsoleApp.csproj",
       "projectName": "PokemonConsoleApp",
-      "projectPath": "/home/student/RiderProjects/PokemonConsoleApp/PokemonConsoleApp/PokemonConsoleApp.csproj",
+      "projectPath": "/home/student/RiderProjects/PokemonConsoleApp2/PokemonConsoleApp/PokemonConsoleApp.csproj",
       "packagesPath": "/home/student/.nuget/packages/",
-      "outputPath": "/home/student/RiderProjects/PokemonConsoleApp/PokemonConsoleApp/obj/",
+      "outputPath": "/home/student/RiderProjects/PokemonConsoleApp2/PokemonConsoleApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/student/.nuget/NuGet/NuGet.Config"
